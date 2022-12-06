@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+#include <map>
+#include "header.h"
+
+using namespace std;
+
+int main ()
+{
+  //declare the map from both key values as string type
+  map<string,string> stateDataMap;
+  //sets the values fro the given key
+  stateDataMap ["Nebraska"] ="Lincoln";
+  stateDataMap ["New York"] = "Albany";
+  stateDataMap ["Ohio"] = "Columbus";
+  stateDataMap ["California"]= "Sacramento";
+  stateDataMap ["Massachussetts"] = "Boston";
+  stateDataMap ["Texas"]= "Austin";
+  //The output for the content I created of StateDataMap
+  for(auto i : stateDataMap){
+    cout<<i.first<<":"<< i.second<<endl;
+    
+  }
+  //changes the value of keys 
+
+  stateDataMap["California"] = "Los Angeles";
+
+  string stateName;
+  cout <<"\nEnter state name: "<<header<< endl;
+  cin>>stateName;
+  
+  cout <<stateDataMap[stateName];
+  return 0;
+  
+
+}
