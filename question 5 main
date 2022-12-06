@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include "header.h"
+#include "header.h" //added the header 
 
 using namespace std;
 
@@ -24,11 +24,11 @@ int main ()
   //changes the value of keys 
 
   stateDataMap["California"] = "Los Angeles";
-
+//uses the header to find out state name and change 
   string stateName;
   cout <<"\nEnter state name: "<<header<< endl;
   cin>>stateName;
-  
+  //sets the map
   cout <<stateDataMap[stateName];
   return 0;
   
