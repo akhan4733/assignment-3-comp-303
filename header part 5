@@ -1,1 +1,1 @@
-int header (int stateDataMap, int state);
+int header (int stateDataMap, int state); // uses the integers and strings in main. setting the stateDataMap and state.
