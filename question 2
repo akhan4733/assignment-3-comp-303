@@ -1,0 +1,35 @@
+#include<iostream>
+#include<string>
+#include "header.h" //including the header
+
+using namespace std;
+
+string str; //classifying string
+
+
+int main() //main 
+{
+   
+    cout << "Enter any word: "; //asks user to insert a word
+
+    getline(cin, str); //get the word the user implied
+
+
+
+    length = str.length(); //takes in the word and reads the length of word
+
+  //this is the equation that is used for the palindrome
+    for (int i = 0; i < (length / 2); i++)
+    {
+        if (str[i] != str[(length - 1) - i])
+            isPalindrome = false;
+    }
+
+    if (isPalindrome == true) //if word is palindrome use this
+        cout << str << " is a palindrome :)" << endl;
+
+
+    else
+        cout << str << " is not a palindrome :( " << endl; //if word is not palindrome use this
+
+}
