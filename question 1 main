@@ -1,0 +1,36 @@
+#include <iostream> // std::cin, std::cout
+#include <queue> 
+#include "header.h"
+using namespace std;
+
+int main ()
+{
+
+//Adding elements into queue
+myQ.push(1);
+
+myQ.push(2);
+
+myQ.push(3);
+
+myQ.push(4);
+
+myQ.push(5);
+
+myQ.push(6);
+
+myQ.push(7);
+
+//Printing the front of queue BEFORE calling move_to_rear function
+std::cout<<"before removing front of queue"<<std::endl;
+std::cout<<myQ.front()<<std::endl;
+
+//Printing front of queue AFTER calling move_to_rear function
+std::cout<<"after removing front and adding it to rear of the queue,the next element is:"<<std::endl;
+move_to_rear();
+std::cout<<myQ.front()<<std::endl;
+
+return 0;
+}
+
+
