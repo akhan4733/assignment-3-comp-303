@@ -1,0 +1,9 @@
+std::queue<int> myQ;//declaring the queue
+void move_to_rear(){
+//getting front element from queue
+int num=myQ.front();
+//removing element from queue
+myQ.pop();
+//pushing num into queue
+myQ.push(num);
+}
